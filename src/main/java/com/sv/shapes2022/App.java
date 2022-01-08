@@ -24,5 +24,20 @@ public class App {
         Triangle triangle = new Triangle(10, 10);
         System.out.printf("A %s with sides of %.1f and %.1f units has a perimiter of %.1f units and an area of %.1f square units%n",triangle.getType(), triangle.getWidth(), triangle.getHeight(), triangle.getPerimeter(), triangle.getArea());
         
+        Employee e1 = new Employee();
+        e1.hi();
+        
+        ManagerNoOverride m1 = new ManagerNoOverride();
+        m1.hi();
+        
+        Employee m2 = new ManagerNoOverride();
+        m2.hi();
+        
+        ManagerOverride m3 = new ManagerOverride();
+        m3.hi();
+        
+        Employee m4 = new ManagerOverride();
+        m4.hi();
+        
     }
 }

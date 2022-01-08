@@ -14,8 +14,23 @@ package com.sv.shapes2022;
  */
 abstract class Shape {
     
-    private String color;
-    abstract double GetArea();
-    abstract double GetPerimeter();
+    private String colour = "Blue";
+    private String type;
+    
+    abstract double getArea();
+    abstract double getPerimeter();
+    
+    public String getType() {
+        return type;
+    }
+    
+    void setColour(String colour) {
+        this.colour = colour;
+    }
+    
+    String getColour() {
+        return colour;
+    }
+    
     
 }
